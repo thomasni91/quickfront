@@ -1,0 +1,70 @@
+@import '../../theme.scss';
+
+.changeUserName {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 2rem;
+	width: 100%;
+	border-bottom: 2px solid #e7e7e7;
+	gap: 1rem;
+	padding-top: 1rem;
+	label {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 20px;
+		color: #000000;
+	}
+	.typeUsername {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 16px;
+		color: #5d6679;
+		width: 35%;
+	}
+	.email {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 16px;
+		color: #5d6679;
+		background: #fbfbfc;
+		width: 35%;
+	}
+	.setting__button {
+		background-color: $theme_color;
+		color: $text-white-color;
+		border: none;
+		border-radius: 5px;
+		padding: 0.6rem 0.8rem;
+		font-weight: 600;
+		height: 43px;
+		align-self: end;
+		margin-right: 3rem;
+		width: 150px;
+		font-size: 15px;
+		&:hover {
+			background-color: $text-white-color;
+			color: $theme_color;
+			border: 1px solid $theme_color;
+		}
+	}
+}
+@include media($phone) {
+	.changeUserName {
+		.typeUsername {
+			width: 100%;
+		}
+		.email {
+			width: 100%;
+		}
+		.setting__button {
+			align-self: center;
+			margin-right: 0px;
+		}
+	}
+}

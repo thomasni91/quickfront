@@ -1,0 +1,195 @@
+@import '../../theme.scss';
+
+.QuizCard {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: start;
+	header {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 20px;
+		color: #6b6b6b;
+		height: 30px;
+		width: 100%;
+		position: static;
+	}
+	ul {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		gap: 5%;
+		flex-flow: nowrap;
+		overflow-x: auto;
+		padding: 1rem 0 2rem;
+		li {
+			border-radius: 10px;
+			width: 40%;
+			height: 193px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			max-width: 300px;
+			min-width: 240px;
+			cursor: pointer;
+			flex-shrink: 0;
+			position: relative;
+			.copyBtn {
+				position: absolute;
+				border: none;
+				right: 49%;
+				top: 86%;
+				background-color: #f6f6f6;
+			}
+			.link {
+				height: 62%;
+				width: 100%;
+				top: 0;
+				position: absolute;
+			}
+			.quiz_img {
+				background-position: center;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px 10px 0 0;
+			}
+			footer {
+				background: #f7f7f7;
+				border-radius: 0px 0px 7px 7px;
+				height: 34%;
+				display: flex;
+				align-content: space-around;
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 8px;
+				line-height: 6px;
+				color: #7a7a7a;
+				padding: 0px 0px 10px 30px;
+				.cardFooter_left {
+					flex: 1;
+					margin-top: -10px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.questions {
+						background: white;
+						width: 58%;
+						padding: 10px;
+						height: 25%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					span {
+						font-size: 12px;
+						line-height: 15px;
+						color: #000000;
+						padding-bottom: 12%;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						width: 124px;
+					}
+					.joinCode {
+						padding-bottom: 0;
+						margin-top: 8%;
+					}
+				}
+				.cardFooter_right {
+					display: flex;
+					flex: 1;
+					flex-direction: column;
+					justify-content: space-between;
+					margin-top: -10px;
+					align-items: center;
+					padding-left: 1.1rem;
+					.cardPlayQuantity {
+						background: white;
+						width: 51%;
+						height: 25%;
+						display: flex;
+						justify-content: center;
+						padding: 10px;
+						align-items: center;
+					}
+					.created {
+						margin-top: 19%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.QuizCard {
+		ul {
+			li {
+				.copyBtn {
+					bottom: 0%;
+					right: 47%;
+				}
+				footer {
+					padding: 0px 0px 10px 11px;
+					.cardFooter_left {
+						padding-left: 0;
+					}
+					.cardFooter_right {
+						.cardPlayQuantity {
+							width: 56%;
+						}
+						.created {
+							margin-top: 20%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media($phone) {
+	.QuizCard {
+		text-align: center;
+		align-items: center;
+		ul {
+			li {
+				.copyBtn {
+					top: 84%;
+					right: 41%;
+				}
+				footer {
+					padding: 0px 0px 10px 24px;
+					justify-content: space-between;
+					.cardFooter_left {
+						align-items: flex-start;
+						.questions {
+							width: 65%;
+						}
+						span {
+							width: 112px;
+							padding-bottom: 15%;
+							text-align: -webkit-left;
+						}
+						.joinCode {
+							margin-top: 7%;
+						}
+					}
+					.cardFooter_right {
+						padding-left: 0;
+						.cardPlayQuantity {
+							width: 50%;
+						}
+						.created {
+							margin-top: 23%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

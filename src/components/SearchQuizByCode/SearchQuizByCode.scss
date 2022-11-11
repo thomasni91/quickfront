@@ -1,0 +1,23 @@
+@import '../../theme.scss';
+
+.searchQuizByCode {
+	width: 100%;
+	.form {
+		&__container {
+			padding: 1rem;
+			& input {
+				padding: 0.5rem;
+			}
+			& button {
+				padding: 0.5rem;
+			}
+		}
+	}
+}
+@include media($phone) {
+	.searchQuizByCode {
+		justify-content: center;
+		display: flex;
+		margin: 25px auto;
+	}
+}

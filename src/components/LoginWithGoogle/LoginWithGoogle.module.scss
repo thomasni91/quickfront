@@ -1,0 +1,19 @@
+@import '../../theme.scss';
+.btn {
+	display: flex;
+	justify-content: center;
+	border: 3px solid #e8e8e8;
+	width: 234px;
+	margin-top: 23px;
+	& button {
+		justify-content: center;
+		width: 300px;
+		box-shadow: none !important;
+		& span {
+			background-color: white;
+			color: #000;
+			font-family: 'Inter', sans-serif;
+			font-size: 12px;
+		}
+	}
+}

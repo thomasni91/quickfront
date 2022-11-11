@@ -1,0 +1,22 @@
+@import '../../theme.scss';
+.PopularQuiz__container {
+	& h1 {
+		font-family: 'Poppins', sans-serif;
+		font-size: 2rem;
+		color: $heading-gray-color;
+		font-family: 'Red Hat Display', sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
+
+@include media($phone) {
+	.PopularQuiz__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		& h1 {
+			margin-left: 1.5rem;
+		}
+	}
+}

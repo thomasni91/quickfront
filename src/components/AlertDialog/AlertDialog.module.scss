@@ -1,0 +1,23 @@
+@import '../../theme.scss';
+.title {
+	padding: 35px 80px 18px;
+}
+.quizDetailCard__edit {
+	width: 15px;
+}
+.quizDetailCard__button {
+	height: 30px;
+	width: 30px;
+	border: none;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@include media($phone) {
+	.title {
+		padding: 0;
+	}
+}

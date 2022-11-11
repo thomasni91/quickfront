@@ -1,0 +1,56 @@
+@import '../../theme.scss';
+
+.fragment {
+	button {
+		display: flex;
+	}
+}
+.container {
+	width: 68px;
+	height: 28px;
+	border: transparent;
+	background-color: #f0f0f0;
+	border-radius: 3px;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.white {
+	width: 58px;
+	height: 20px;
+	background-color: #d7d7d7;
+	border-radius: 3px;
+}
+
+.right {
+	width: 58px;
+	height: 20px;
+	background-color: lighten($theme_color, 20%);
+	border-radius: 3px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.gray {
+	width: 31px;
+	height: 20px;
+	background-color: #8c8c8c;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.yellow {
+	width: 31px;
+	height: 20px;
+	background-color: $theme_color;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.OnOffButton {
+	height: 13px;
+}

@@ -1,0 +1,19 @@
+@import '../../theme.scss';
+.result__container {
+	padding-top: 70px;
+	.result__title {
+		font-size: 25px;
+		margin: 20px 0 40px 0;
+		color: #404040;
+	}
+	.reult__cardContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	i {
+		min-width: 350px;
+		max-width: 400px;
+		width: 20%;
+	}
+}

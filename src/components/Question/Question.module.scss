@@ -1,0 +1,60 @@
+@import '../../theme.scss';
+.questionCard__container {
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	min-height: 250px;
+	flex-direction: column;
+	padding: 20px;
+	font-family: 'Poppins';
+	color: #949494;
+	margin: 20px 20px;
+	h2 {
+		font-weight: 500;
+		color: #949494;
+		font-size: 20px;
+		margin: 5px;
+	}
+	p {
+		font-size: 14px;
+		margin: 5px;
+	}
+}
+
+.answer__container {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	button {
+		border: 0px;
+		border-radius: 10px;
+		flex: 1;
+		font-size: 16px;
+		min-height: 50px;
+		margin: 5px;
+		background-color: lightgrey;
+		color: #3b3b3b;
+	}
+	input {
+		width: 100%;
+		border: 0px;
+		border-radius: 10px;
+		min-height: 50px;
+		margin: 5px;
+		background-color: lightgrey;
+		font-size: 16px;
+		color: #3b3b3b;
+		text-align: center;
+	}
+	.answer__selected {
+		background-color: $theme_color;
+		color: #e08608;
+	}
+	.answer__result {
+		background-color: #99adf9;
+		color: #0c3db1;
+	}
+	@include media($phone) {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,115 @@
+@import '../../theme.scss';
+section {
+	&.popular-container {
+		margin: 1rem 0 2rem;
+		min-height: 110px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			column-gap: 2%;
+			padding-left: 0px;
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 0.375rem;
+				background-color: $card-bg-gray-color;
+				width: 19.2%;
+				aspect-ratio: 1.25;
+				cursor: pointer;
+				color: $text-white-color;
+				text-transform: uppercase;
+				position: relative;
+				&:hover {
+					background-color: $theme_color;
+				}
+				h2 {
+					font-size: 1.5rem;
+					font-weight: 400;
+					width: 80%;
+					margin: 0 0.4rem;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					text-align: center;
+					overflow: hidden;
+					font-family: 'Red Hat Display', sans-serif;
+				}
+			}
+			& small {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0.4rem;
+				right: 0.4rem;
+				padding: 0 3%;
+				border: 0.3px solid #f1f1f1;
+				border-radius: 3px;
+				color: $dark_text_color;
+				background-color: $bg-white-color;
+				text-align: center;
+				text-transform: capitalize;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 500;
+			}
+		}
+		& P {
+			white-space: nowrap;
+			font-weight: 600;
+		}
+	}
+
+	@media (max-width: 900px) {
+		&.popular-container {
+			ul {
+				li {
+					h2 {
+						font-size: 0.75rem;
+					}
+				}
+				& small {
+					top: 0.2rem;
+					right: 0.2rem;
+					font-size: 0.5rem;
+				}
+			}
+			& P {
+				white-space: nowrap;
+				font-weight: 500;
+			}
+		}
+	}
+
+	@include media($phone) {
+		&.popular-container {
+			flex-direction: column;
+			gap: 25px;
+			ul {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 32px;
+				padding: 0;
+				li {
+					aspect-ratio: 1;
+					width: 44%;
+					&:last-child {
+						display: none;
+					}
+				}
+			}
+			&.login__back {
+				width: 80vw;
+			}
+			& P {
+				white-space: nowrap;
+				font-size: 10px;
+				font-weight: 400;
+			}
+		}
+	}
+}

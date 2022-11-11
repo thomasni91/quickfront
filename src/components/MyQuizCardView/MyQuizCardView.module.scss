@@ -1,0 +1,42 @@
+@import '../../theme.scss';
+
+.myQuiz__content {
+	margin: 20px 0;
+
+	.myQuiz__contentTitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		.myQuiz__title {
+			font-size: 25px;
+			margin: 25px 0;
+			color: #404040;
+		}
+		p {
+			cursor: pointer;
+			color: $theme_color;
+		}
+	}
+
+	.myQuiz__saved {
+		height: 300px;
+		overflow: hidden;
+		transition: all 200ms ease-in-out;
+	}
+	.myQuiz__uploaded {
+		height: 300px;
+		overflow: hidden;
+		transition: all 200ms ease-in-out;
+	}
+	.myQuiz__cardContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		i {
+			margin-bottom: 40px;
+			min-width: 350px;
+			max-width: 400px;
+			width: 20%;
+		}
+	}
+}

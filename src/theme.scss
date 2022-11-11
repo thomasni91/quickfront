@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500;600&family=Questrial&family=Quicksand&family=Red+Hat+Display&family=Roboto&family=Shanti&display=swap');
+// responsive styling tool
+$wide: '(min-width: 1800px)' !default;
+$desktop: '(min-width: 1200px)' !default;
+$tablet-landscape: '(min-width: 900px) and (orientation: landscape)' !default;
+$tablet-protrait: '(min-width: 600px) and (orientation: portrait)' !default;
+$phone: '(max-width: 600px)' !default;
+
+@mixin media($query: $phone) {
+	@media #{$query} {
+		@content;
+	}
+}
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes wipe-enter {
+	0% {
+		opacity: 0;
+		transform: scale(0.75, 0.75);
+	}
+}
+// theme colors
+$theme_color: #fcc822;
+$gray_color: #f3f3f3;
+$text_color: #383838;
+$text-white-color: #ffffff;
+$bg-white-color: #ffffff;
+$dark_color: #474747;
+$dark_text_color: #767676;
+$light_text_color: #d2d2d2;
+$card-bg-gray-color: #dadada;
+$heading-gray-color: #6b6b6b;
+
+// height
+$top-search-bar-height: 4rem;
+
+//width
+$page-max-width: 1200px;

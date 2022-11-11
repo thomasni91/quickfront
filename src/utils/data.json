@@ -1,0 +1,391 @@
+{
+	"getQuizByUserIdResponse": {
+		"data": [
+			{
+				"_id": "61fa5784c0cf7f9ada848e50",
+				"name": "Funny Quiz 4",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [
+					{
+						"_id": "61fa2e7579e7c60fdf91b365",
+						"title": "this is the new titles",
+						"create": null,
+						"choices": [""],
+						"correctAnswer": [""],
+						"type": "",
+						"__v": 0
+					},
+					{
+						"_id": "61fa309fe84345f5045da6cf",
+						"title": "how many days in a month",
+						"create": "2001-04-30T14:00:00.000Z",
+						"choices": [30, 36, 28, 50],
+						"correctAnswer": ["30"],
+						"type": "single selection",
+						"__v": 0,
+						"updatedAt": "2022-02-19T06:01:16.502Z"
+					},
+					{
+						"_id": "620bb1fb831a151815de154e",
+						"title": "what your name",
+						"choices": ["[a,b,c]"],
+						"correctAnswer": ["a"],
+						"type": "single selection",
+						"createdAt": "2022-02-15T14:00:27.442Z",
+						"updatedAt": "2022-02-15T14:00:27.442Z",
+						"__v": 0
+					}
+				],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-02T10:05:56.476Z",
+				"__v": 1
+			},
+			{
+				"_id": "61fa8ab3c6b1cf824942d894",
+				"name": "Funny Quiz 3",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [
+					{
+						"_id": "61fa2e7579e7c60fdf91b365",
+						"title": "this is the new titles",
+						"create": null,
+						"choices": [""],
+						"correctAnswer": [""],
+						"type": "",
+						"__v": 0
+					},
+					{
+						"_id": "61fa309fe84345f5045da6cf",
+						"title": "how many days in a month",
+						"create": "2001-04-30T14:00:00.000Z",
+						"choices": [30, 36, 28, 50],
+						"correctAnswer": ["30"],
+						"type": "single selection",
+						"__v": 0,
+						"updatedAt": "2022-02-19T06:01:16.502Z"
+					}
+				],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-02T13:44:19.003Z",
+				"__v": 0
+			},
+			{
+				"_id": "62062f97c0393d1809c85fdf",
+				"name": "Funny Quiz 5",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [
+					{
+						"_id": "620bb1fb831a151815de154e",
+						"title": "what your name",
+						"choices": ["[a,b,c]"],
+						"correctAnswer": ["a"],
+						"type": "single selection",
+						"createdAt": "2022-02-15T14:00:27.442Z",
+						"updatedAt": "2022-02-15T14:00:27.442Z",
+						"__v": 0
+					}
+				],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-11T09:42:47.633Z",
+				"__v": 3
+			},
+			{
+				"_id": "620b8881cd16a0fd1cc64ca6",
+				"name": "Funny Quiz validation",
+				"date": "2022-02-02T10:05:56.476Z",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [
+					{
+						"_id": "61fa2e7579e7c60fdf91b365",
+						"title": "this is the new titles",
+						"create": null,
+						"choices": [""],
+						"correctAnswer": [""],
+						"type": "",
+						"__v": 0
+					},
+					{
+						"_id": "61fa309fe84345f5045da6cf",
+						"title": "how many days in a month",
+						"create": "2001-04-30T14:00:00.000Z",
+						"choices": [30, 36, 28, 50],
+						"correctAnswer": ["30"],
+						"type": "single selection",
+						"__v": 0,
+						"updatedAt": "2022-02-19T06:01:16.502Z"
+					}
+				],
+				"quizTypes": [],
+				"private": false,
+				"__v": 0
+			},
+			{
+				"_id": "620b88a3cd16a0fd1cc64ca8",
+				"name": "Funny Quiz validation",
+				"date": "2022-02-02T10:05:56.476Z",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [
+					{
+						"_id": "61fa2e7579e7c60fdf91b365",
+						"title": "this is the new titles",
+						"create": null,
+						"choices": [""],
+						"correctAnswer": [""],
+						"type": "",
+						"__v": 0
+					},
+					{
+						"_id": "61fa309fe84345f5045da6cf",
+						"title": "how many days in a month",
+						"create": "2001-04-30T14:00:00.000Z",
+						"choices": [30, 36, 28, 50],
+						"correctAnswer": ["30"],
+						"type": "single selection",
+						"__v": 0,
+						"updatedAt": "2022-02-19T06:01:16.502Z"
+					}
+				],
+				"quizTypes": [],
+				"private": false,
+				"__v": 0
+			},
+			{
+				"_id": "620b893e6313549770ee29ee",
+				"name": "Funny Quiz validation",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-15T11:06:38.636Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6e5f428104b3ce444bb8",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:01:03.700Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6e76428104b3ce444bba",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:01:26.269Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6e81428104b3ce444bbc",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:01:37.941Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6e90428104b3ce444bbe",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:01:52.756Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6ec42c8e64fe7d0c1709",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:02:44.785Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6ed3d1ea45aa4e89724b",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:02:59.918Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6ed9d1ea45aa4e89724d",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:03:05.359Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6f1cd1ea45aa4e897253",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:04:12.437Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6f35d1ea45aa4e897257",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:04:37.315Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6f9ad1ea45aa4e897259",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:06:18.305Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6fa5d1ea45aa4e89725b",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:06:29.784Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f6faad1ea45aa4e89725d",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:06:34.711Z",
+				"__v": 0
+			},
+			{
+				"_id": "620f766cd1ea45aa4e89725f",
+				"name": "Math quiz collection",
+				"creator": "61ef9c794c3f77ec28a04c16",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-18T10:35:24.038Z",
+				"__v": 0
+			},
+			{
+				"_id": "6211f60dbcdf0b37fb0fb51a",
+				"name": "test",
+				"creator": "62073846c6e2f7f146597620",
+				"questions": [],
+				"quizTypes": [],
+				"private": false,
+				"date": "2022-02-20T08:04:29.432Z",
+				"__v": 0
+			}
+		]
+	},
+	"getAnswerHistoryByUserId": {
+		"data": [
+			{
+				"_id": "61fa3427f8c33d52d5066468",
+				"question": "61ef9c794c3f77ec28a04c16",
+				"creator": "61fa4a95d9fbea8a123451af",
+				"userAnswer": ["a", "c"],
+				"date": "2022-02-02T10:05:56.476Z"
+			},
+			{
+				"_id": "61fa3427f8c33d52d5066468",
+				"question": "61ef9c794c3f77ec28a04c16",
+				"creator": "61fa4a95d9fbea8a123451af",
+				"userAnswer": ["a", "c"],
+				"date": "2022-02-02T10:05:56.476Z"
+			},
+			{
+				"_id": "61fa3427f8c33d52d5066468",
+				"question": "61ef9c794c3f77ec28a04c16",
+				"creator": "61fa4a95d9fbea8a123451af",
+				"userAnswer": ["a", "c"],
+				"date": "2022-03-12T10:05:56.476Z"
+			}
+		]
+	},
+	"popularType": {
+		"data": [
+			{
+				"_id": "61fa4a95d9fbea8a123451af",
+				"count": 55,
+				"quiztype": [
+					{
+						"_id": "61fa4a95d9fbea8a123451af",
+						"name": "deleted",
+						"__v": 0
+					}
+				]
+			},
+			{
+				"_id": "6214f72defb0fa39138e0afb",
+				"count": 20,
+				"quiztype": [
+					{
+						"_id": "6214f72defb0fa39138e0afb",
+						"name": "math",
+						"__v": 0
+					}
+				]
+			},
+			{
+				"_id": "61fa4a8ed9fbea8a123451ad",
+				"count": 18,
+				"quiztype": [
+					{
+						"_id": "61fa4a8ed9fbea8a123451ad",
+						"name": "deleted",
+						"__v": 0
+					}
+				]
+			},
+			{
+				"_id": "62291d0fc56e94312f77700e",
+				"count": 12,
+				"quiztype": [
+					{
+						"_id": "62291d0fc56e94312f77700e",
+						"name": "type1",
+						"__v": 0
+					}
+				]
+			},
+			{
+				"_id": "6214f75ce744602850e6e723",
+				"count": 10,
+				"quiztype": [
+					{
+						"_id": "6214f75ce744602850e6e723",
+						"name": "math",
+						"__v": 0
+					}
+				]
+			}
+		]
+	}
+}

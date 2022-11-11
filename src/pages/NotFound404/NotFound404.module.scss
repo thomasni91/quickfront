@@ -1,0 +1,112 @@
+@import '../../theme.scss';
+
+.notFound__container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.notFound__text {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		h3,
+		p {
+			width: 400px;
+			margin: auto;
+		}
+		h3 {
+			font-size: 70px;
+			line-height: 140px;
+		}
+		p {
+			font-size: 25px;
+			line-height: 60px;
+			&:nth-child(3) {
+				color: #969696;
+			}
+		}
+
+		.notFound__backBtn {
+			margin-top: 60px;
+			width: 400px;
+			font-size: 18px;
+			background-color: $theme_color;
+			color: white;
+		}
+	}
+	.notFound__hero {
+		width: 50%;
+		img {
+			width: 70%;
+			min-width: 500px;
+		}
+	}
+}
+
+@include media($phone) {
+	.notFound__container {
+		flex-direction: column-reverse;
+		.notFound__text {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+
+			h3 {
+				font-size: 50px;
+			}
+			p {
+				font-size: 20px;
+			}
+			h3,
+			p {
+				width: auto;
+			}
+			.notFound__backBtn {
+				width: 50%;
+			}
+		}
+		.notFound__hero {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			img {
+				min-width: 300px;
+			}
+		}
+	}
+}
+
+@include media($tablet-protrait) {
+	.notFound__container {
+		flex-direction: column-reverse;
+		.notFound__text {
+			margin-top: 20px;
+			width: 100%;
+			text-align: center;
+			h3 {
+				font-size: 50px;
+			}
+			p {
+				font-size: 20px;
+			}
+			h3,
+			p {
+				width: auto;
+			}
+			.notFound__backBtn {
+				width: 50%;
+			}
+		}
+		.notFound__hero {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			img {
+				min-width: 300px;
+			}
+		}
+	}
+}

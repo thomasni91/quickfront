@@ -1,0 +1,21 @@
+@import '../../theme.scss';
+
+.quizResult__container {
+	padding-top: 70px;
+	.quizResult__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.quizResult__textContainer {
+			width: 200px;
+		}
+	}
+	.quizResult__selectBoxContainer {
+		width: 200px;
+	}
+	.quizResult__title {
+		font-size: 25px;
+		margin: 25px 0;
+		color: #404040;
+	}
+}

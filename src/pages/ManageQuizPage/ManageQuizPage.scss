@@ -1,0 +1,19 @@
+@import '../../theme.scss';
+
+.page__container {
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+
+	justify-content: center;
+}
+
+.quiz_content {
+	flex-flow: column;
+	overflow: scroll;
+	overflow-x: hidden;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	background-color: #e5e5e5;
+}

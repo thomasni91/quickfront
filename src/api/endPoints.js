@@ -1,0 +1,19 @@
+export const API_URL = process.env.REACT_APP_API_URL;
+export const LAMBDA_API_URL = process.env.REACT_APP_LAMBDA_API_URL;
+
+export const LOGIN_API = `${API_URL}/auth/signin`;
+export const SIGNUP_API = `${API_URL}/auth/signup`;
+export const GOOGLEAUTH_API = `${API_URL}/auth/google-auth`;
+export const QUESTION_API = `${API_URL}/question`;
+export const QUIZ_API = `${API_URL}/quiz`;
+export const TAKEQUIZ_API = `${API_URL}/take-quiz`;
+export const QUIZ_TYPE_API = `${API_URL}/quiz-type`;
+export const USER_API = `${API_URL}/users`;
+export const ANSWER_API = `${API_URL}/answer`;
+export const SEND_EMAIL_API = `${LAMBDA_API_URL}/sendmail`;
+export const SIGNUP_VERIFY_API = `${API_URL}/auth/signup-verify`;
+export const RESET_PASSWORD_API = `${API_URL}/users/resetpassword`;
+export const UPLOAD_QUIZ_COVER = `https://smirbj9ovc.execute-api.ap-southeast-2.amazonaws.com/uploadQuizCover`;
+export const UPLOAD_USER_AVATAR = `https://smirbj9ovc.execute-api.ap-southeast-2.amazonaws.com/uploadAvatar`;
+export const GET_QUIZ_COVER = `https://smirbj9ovc.execute-api.ap-southeast-2.amazonaws.com/getQuizCover`;
+export const GET_USER_AVATAR = `https://smirbj9ovc.execute-api.ap-southeast-2.amazonaws.com/getAvatar`;

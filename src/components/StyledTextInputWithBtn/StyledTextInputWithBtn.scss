@@ -1,0 +1,70 @@
+@import '../../theme.scss';
+
+.form__animation {
+	animation-name: bounce;
+	animation-duration: 1s;
+	transition: ease-in-out;
+}
+
+.form {
+	width: 60%;
+	margin: 1rem;
+	margin-left: 0;
+	text-align: center;
+}
+
+.form__container {
+	background-color: #f6f6f6;
+	padding: 1.5rem;
+	box-shadow: 0px 0px 4px rgba(133, 133, 133, 0.25);
+	border-radius: 10px;
+}
+@keyframes bounce {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(30px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+.form__btn,
+.form__input {
+	padding: 1rem;
+	border: 0px;
+	font-family: 'Poppins';
+	font-size: 1rem;
+	font-weight: 650;
+}
+
+.form__input {
+	width: 75%;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.form__btn {
+	cursor: pointer;
+	color: white;
+	background-color: $theme-color;
+	width: 25%;
+	border-radius: 0px 10px 10px 0px;
+}
+
+@include media($phone) {
+	.form__btn,
+	.form__input {
+		font-size: 0.7rem;
+		font-weight: 650;
+		padding: 0.5rem;
+		display: block;
+		width: 90%;
+		margin: 1rem auto;
+		border-radius: 10px 10px 10px 10px;
+	}
+	.form {
+		width: 100%;
+		margin: 0;
+	}
+}

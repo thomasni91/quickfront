@@ -1,0 +1,42 @@
+{
+	"env": {
+		"browser": true,
+		"jest": true
+	},
+	"extends": ["airbnb", "prettier"],
+	"plugins": ["prettier"],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"babelOptions": {
+			"presets": ["@babel/preset-react"]
+		},
+		"requireConfigFile": false,
+		"sourceType": "module",
+		"allowImportExportEverywhere": true,
+		"codeFrame": false
+	},
+	"rules": {
+		"no-console": 2,
+		"prettier/prettier": ["error"],
+		"no-debugger": "error",
+		"no-alert": "error",
+		"default-case": "error",
+		"max-len": ["error", { "code": 120 }],
+		"prefer-promise-reject-errors": ["off"],
+		"react/jsx-filename-extension": ["off"],
+		"jsx-a11y/no-static-element-interactions": ["off"],
+		"jsx-a11y/label-has-associated-control": ["off"],
+		"jsx-a11y/click-events-have-key-events": ["off"],
+		"jsx-a11y/no-noninteractive-element-interactions": ["off"],
+		"react/prop-types": ["off"],
+		"no-return-assign": ["off"],
+		"no-underscore-dangle": ["off"],
+		"no-param-reassign": [
+			"error",
+			{ "props": true, "ignorePropertyModificationsFor": ["state"] }
+		]
+	},
+	"globals": {
+		"process": true
+	}
+}

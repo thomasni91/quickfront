@@ -1,0 +1,204 @@
+@import '../../theme.scss';
+
+@mixin buttonStyle {
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	border: 1px solid $theme_color;
+	background-color: white;
+	color: $theme_color;
+	cursor: pointer;
+}
+
+@mixin inputStyle {
+	width: 100%;
+	border: none;
+	height: 30px;
+	background-color: transparent;
+	box-sizing: border-box;
+	transition: 400ms all ease-in-out;
+	outline: none;
+}
+
+@mixin labelStyle {
+	width: 100%;
+	text-align: left;
+	color: $text_colot;
+}
+
+.signup__container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	.signup__back {
+		color: rgb(104, 104, 104);
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 999;
+		p {
+			font-size: 15px;
+			margin-left: 10px;
+		}
+	}
+	.signup__form {
+		width: 50%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		position: relative;
+		.login_google {
+			& button {
+				justify-content: center;
+				width: 300px;
+				box-shadow: none;
+				& span {
+					background-color: white;
+					color: #000;
+					font-family: 'Inter', sans-serif;
+					font-size: 12px;
+				}
+			}
+		}
+		.signup__box {
+			width: 65%;
+			margin: 12px 0 20px 0;
+		}
+		section {
+			margin-top: 30px;
+			p {
+				font-family: Poppins;
+				color: #a1a1a1;
+			}
+		}
+
+		img {
+			padding-bottom: 10px;
+			width: 300px;
+			position: relative;
+			top: 8px;
+		}
+		.resend__btn {
+			display: flex;
+			justify-content: space-between;
+			width: 65%;
+			align-items: center;
+			button {
+				cursor: pointer;
+				color: rgba(0, 0, 0, 0.61);
+				text-transform: capitalize;
+				font-size: 16px;
+				font-family: inherit;
+			}
+		}
+		.signup__btnWrapper {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			button {
+				@include buttonStyle();
+				margin: 10px;
+				width: 65%;
+				background-color: $theme_color;
+				color: white;
+				height: 55px;
+			}
+		}
+		.signup__redirect {
+			font-family: Poppins;
+			color: #a1a1a1;
+			display: flex;
+			p:last-child {
+				color: $theme_color;
+				cursor: pointer;
+				padding-left: 5px;
+			}
+		}
+	}
+	aside {
+		width: 50%;
+		height: 100vh;
+		background-image: url('../../assets/Signup-hero.png');
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+
+		.signup__overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50vw;
+			height: 100vh;
+			background-color: #474747;
+			backdrop-filter: blur(40px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.signup__textContainer {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				margin: 0 20px;
+				width: 80%;
+				& p {
+					font-family: Quicksand;
+					font-size: 25px;
+					line-height: 20px;
+					color: #ffffff;
+					display: flex;
+					padding-bottom: 100px;
+				}
+				.signup__hero {
+					width: 90%;
+				}
+			}
+		}
+	}
+}
+
+@include media($phone) {
+	.signup__container {
+		.signup__form {
+			width: 100vw;
+			.signup__box {
+				width: 65%;
+			}
+			.signup__redirect {
+				font-size: small;
+			}
+		}
+		aside {
+			display: none;
+		}
+	}
+}
+
+@include media($tablet-protrait) {
+	.signup__container {
+		.signup__form {
+			width: 100vw;
+			.signup__box {
+				width: 80%;
+			}
+			.signup__redirect {
+				font-size: small;
+			}
+		}
+		aside {
+			display: none;
+		}
+	}
+}

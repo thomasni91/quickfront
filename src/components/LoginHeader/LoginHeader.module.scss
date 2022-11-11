@@ -1,0 +1,287 @@
+@import '../../theme.scss';
+
+header {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	a:link,
+	a:active,
+	a:visited,
+	a:active {
+		color: #fff;
+	}
+	.logo_section {
+		position: relative;
+		img {
+			margin-left: 40px;
+		}
+	}
+	.headerContainer {
+		background-color: rgba($color: #474747, $alpha: 1);
+		display: flex;
+		padding: 5px 15px;
+		width: 100%;
+		box-sizing: border-box;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 78px;
+		top: 22px;
+		.logo_section {
+			position: relative;
+			img {
+				margin-left: 40px;
+				min-width: 100%;
+			}
+		}
+	}
+	.login_area {
+		color: #ffffff;
+		display: flex;
+		span {
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			line-height: 37px;
+			margin-inline-end: 23px;
+			white-space: nowrap;
+			cursor: pointer;
+		}
+		.privacy {
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			line-height: 37px;
+			margin-inline-end: 23px;
+			white-space: nowrap;
+			color: white;
+		}
+		.login_nav {
+			justify-content: space-between;
+			button {
+				font-family: 'Poppins', sans-serif;
+				padding: 0.1px 0.1px;
+				margin-right: 10px;
+				display: inline-block;
+				font-weight: 400;
+				font-size: 14px;
+				color: #ffffff;
+				background-color: $theme_color;
+				height: 33px;
+				width: 75px;
+				border-radius: 1px;
+				border-color: $theme_color;
+				text-transform: capitalize;
+			}
+			.login_navbtn_r {
+				background-color: #474747;
+				color: $theme_color;
+			}
+			.login_navbtn {
+				width: 84px;
+				margin-top: 2px;
+			}
+		}
+	}
+}
+.menu_group {
+	display: none;
+}
+.navBar {
+	display: none;
+	.navBar__background {
+		background-color: #474747;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		width: 100vw;
+		height: 100px;
+	}
+}
+@include media($phone) {
+	header {
+		box-sizing: border-box;
+		display: flex;
+		.headerContainer {
+			.logo_section {
+				img {
+					margin-left: 0;
+					min-width: 100%;
+				}
+			}
+		}
+		.login_area {
+			display: none;
+		}
+		.menu_btn_close {
+			color: $theme_color;
+			font-size: 35px;
+			margin-left: 92px;
+			cursor: pointer;
+		}
+		.menu_burger {
+			.menu_btn_burger {
+				color: $theme_color;
+				font-size: 35px;
+				cursor: pointer;
+			}
+			.logo_section {
+				img {
+					margin-left: 17px;
+					display: flex;
+					min-width: 100%;
+				}
+			}
+		}
+	}
+	.menu_group {
+		display: block;
+	}
+	.backgrd {
+		width: 100%;
+		height: 120px;
+		background-color: white;
+		z-index: 100;
+	}
+	.navBar {
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		position: fixed;
+		padding-top: 47px;
+		z-index: 99;
+		width: 100vw;
+		height: 100vh;
+		top: 75px;
+		.login_section {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding-bottom: 5px;
+			img {
+				width: 110px;
+				height: 110px;
+				display: block;
+				border-radius: 5px;
+			}
+			.logout_content {
+				margin-left: 20px;
+			}
+			.logout_text {
+				display: flex;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				text-transform: capitalize;
+				line-height: 55px;
+				font-size: 31px;
+				color: white;
+			}
+			.sign_group {
+				display: flex;
+				margin-top: 10px;
+				line-height: 55px;
+
+				.sign_up {
+					font-family: 'Poppins', sans-serif;
+					font-weight: 600;
+					font-size: 15px;
+					text-transform: capitalize;
+					color: #ffffff;
+					background-color: $theme_color;
+					padding: 20px 0;
+					height: 36px;
+					width: 84px;
+					display: flex;
+					border-radius: 11px;
+				}
+				.login_mob {
+					font-family: 'Poppins', sans-serif;
+					font-weight: 600;
+					font-size: 15px;
+					text-transform: capitalize;
+					color: $theme_color;
+					background-color: #ffffff;
+					border-color: $theme_color;
+					padding: 20px 0;
+					height: 36px;
+					width: 84px;
+					display: flex;
+					border-radius: 11px;
+					margin-left: 10px;
+				}
+			}
+		}
+
+		.profile_section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.logout_section {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				& img {
+					width: 110px;
+					height: 108px;
+					display: block;
+					border-radius: 5px;
+				}
+				.logout_content {
+					margin-left: 20px;
+				}
+				.logout_text {
+					font-family: 'Poppins', sans-serif;
+					font-weight: 600;
+					text-transform: capitalize;
+					line-height: 55px;
+					font-size: 31px;
+					color: white;
+					width: 200px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+				.sign_group {
+					display: flex;
+					margin-top: 10px;
+					line-height: 55px;
+					.logout {
+						font-family: 'Poppins', sans-serif;
+						display: flex;
+						font-weight: 600;
+						font-size: 13px;
+						text-transform: capitalize;
+						color: #ffffff;
+						background-color: $theme_color;
+						padding: 0.1px 0.1px;
+						height: 38px;
+						width: 105px;
+						border-radius: 11px;
+					}
+				}
+			}
+
+			.btn_group {
+				margin-top: 58px;
+				.tab {
+					font-family: 'Poppins', sans-serif;
+					font-size: 20px;
+					background-color: #ffffff;
+					border-top: none;
+					border-bottom: 1px solid #ecece8;
+					border-left: none;
+					border-right: none;
+					color: #777777;
+					width: 288px;
+					display: flex;
+					flex-direction: column;
+					padding: 30px 50px;
+				}
+			}
+		}
+	}
+}

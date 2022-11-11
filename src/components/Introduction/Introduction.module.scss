@@ -1,0 +1,98 @@
+@import '../../theme.scss';
+
+.Introduction_tiitle {
+	text-align: center;
+	padding: 8rem 10% 0 10%;
+	em {
+		background-image: url(https://assets.quizlet.com/a/j/dist/app/i/prismic/scribble.6c75e80726e3401.svg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		font-size: 2rem;
+		line-height: 1.25;
+		padding: 2.1875rem;
+	}
+}
+
+.Introduction_content_container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding-top: 3rem;
+	.Introduction_img {
+		width: 40rem;
+		img {
+			width: 100%;
+		}
+	}
+	.order {
+		order: 1;
+	}
+	.Introduction_content {
+		width: 40rem;
+		padding: 0 3%;
+		.Introduction_subtiitle {
+			margin-bottom: 3rem;
+		}
+	}
+}
+.Introduction_comment {
+	text-align: center;
+	align-items: center;
+	height: 30rem;
+	display: flex;
+	align-content: center;
+	.comment {
+		padding: 5% 15% 2% 15%;
+		font-size: 1.875rem;
+		font-weight: 700;
+		line-height: 1.266666666666667;
+		&:before {
+			content: url(https://assets.quizlet.com/a/j/dist/app/i/prismic/quotes-open.76da8581ea3adc0.svg);
+			margin-right: 0.5rem;
+		}
+		&:after {
+			bottom: -1.125rem;
+			content: url(https://assets.quizlet.com/a/j/dist/app/i/prismic/quotes-close.f05dbfc1b568217.svg);
+			margin-left: 0.5rem;
+			position: relative;
+		}
+	}
+	.author {
+		color: #a9a9a9;
+		font-weight: 600;
+		margin-top: 3rem;
+	}
+}
+
+@include media($phone) {
+	.Introduction_content_container {
+		flex-direction: column;
+		padding-top: 1rem;
+		.Introduction_img {
+			width: 65%;
+			img {
+				width: 100%;
+			}
+		}
+		.order {
+			order: 0;
+		}
+		.Introduction_content {
+			width: 70%;
+			padding: 0 3%;
+			.Introduction_subtiitle {
+				margin-bottom: 0rem;
+			}
+		}
+	}
+	.Introduction_comment {
+		height: 20rem;
+		.comment {
+			font-size: 1rem;
+		}
+		.author {
+			margin-top: 1.5rem;
+		}
+	}
+}

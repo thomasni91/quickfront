@@ -1,0 +1,64 @@
+@import '../../theme.scss';
+.cropContainer {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #333;
+	@include media($phone) {
+		height: 400;
+	}
+}
+.cropbutton {
+	flex-shrink: 0;
+	margin-left: 16;
+}
+.controls {
+	padding: 16;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	@include media($phone) {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+.sliderContainer {
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+.sliderlabel {
+	background-color: #333;
+	@include media($phone) {
+		min-width: 65;
+	}
+}
+.slider {
+	padding: 22px 0px;
+	margin-left: 16;
+	@include media($phone) {
+		flex-direction: row;
+		align-items: center;
+		margin: 0 16px;
+	}
+}
+.btnGroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	@include media($phone) {
+		flex-direction: column;
+	}
+	button {
+		background-color: $theme_color;
+		color: white;
+		border: 0;
+		box-shadow: 0px;
+		border-radius: 4px;
+		padding: 1rem 5rem;
+		&:last-child {
+			background-color: $dark_color;
+		}
+	}
+}

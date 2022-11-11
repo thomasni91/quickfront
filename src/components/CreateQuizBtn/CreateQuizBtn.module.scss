@@ -1,0 +1,64 @@
+@import '../../theme.scss';
+.backdrop {
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-color: white;
+	opacity: 1;
+}
+.createQuiz {
+	& .createQuizBtn {
+		background-color: $theme_color;
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		font-size: 16px;
+		width: fit-content;
+		text-transform: capitalize;
+		border: solid;
+		padding: 0.8rem 2rem;
+		&:hover {
+			background-color: $theme_color;
+			color: white;
+			-webkit-transform: translateY(-5px);
+			transform: translateY(-5px);
+		}
+	}
+}
+.closeIcon {
+	color: #d1d1d1;
+}
+.createQuizNameTypePage {
+	background-color: white;
+	position: absolute;
+	top: 0%;
+	left: 18%;
+	height: 100%;
+	width: 82%;
+	background-color: white;
+	text-align: right;
+	border: 1px solid $theme_color;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+@include media($phone) {
+	.createQuiz {
+		.createQuizBtn {
+			font-size: 10px;
+			padding: 7px 15px;
+		}
+		.createQuizNameTypePage {
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+		}
+	}
+}

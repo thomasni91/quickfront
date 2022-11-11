@@ -1,0 +1,51 @@
+@import '../../theme.scss';
+
+.questions__container {
+	z-index: 100;
+	@include media($phone) {
+		padding: 0 50px;
+	}
+}
+
+.questions__content {
+	border: 1px solid #f1f1f1;
+	background-color: #f9f9f9;
+	max-width: 188px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 9px;
+	font-weight: bold;
+	.plus {
+		color: #cccccc;
+	}
+
+	& ~ & {
+		margin: 0rem;
+	}
+	button {
+		text-transform: none;
+		padding: 0;
+		color: #ffff;
+		font-size: 7px;
+		font-weight: bold;
+		background-color: #98acf2;
+		margin: 6px 0;
+		width: 80px;
+		padding: 10px 0;
+		&:hover {
+			background-color: #98acf2;
+		}
+	}
+	.btn__yellow {
+		background-color: $theme_color;
+		&:hover {
+			background-color: $theme_color;
+		}
+	}
+	@include media($phone) {
+		max-width: 70px;
+		flex-flow: column;
+		align-items: center;
+	}
+}

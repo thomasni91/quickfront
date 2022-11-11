@@ -1,0 +1,161 @@
+@import '../../theme.scss';
+
+li {
+	list-style-type: none;
+}
+.model__container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow-y: auto;
+	.model__heading {
+		width: 100%;
+		margin: 0px;
+		display: flex;
+		justify-content: center;
+	}
+	.header {
+		color: black;
+		text-align: left;
+		padding: 1rem 0px;
+		margin-top: 2%;
+		width: 80%;
+		max-width: 800px;
+	}
+
+	.model__content {
+		margin: auto;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		max-width: 800px;
+		padding-top: 40px;
+		.uploadPhoto_area {
+			display: flex;
+			flex-direction: row;
+			gap: 45px;
+			aspect-ratio: 2.6;
+			align-items: center;
+			justify-content: center;
+			background-color: #f4f4f4;
+			border-radius: 11px;
+			img {
+				width: 26%;
+				height: 56%;
+			}
+			.uploadPhoto_right {
+				width: 45%;
+				height: 46%;
+				display: flex;
+				flex-direction: column;
+				gap: 14px;
+				.upload_btn {
+					width: 6rem;
+					height: 2.5rem;
+					text-align: center;
+					line-height: 2;
+					display: block;
+					flex-direction: column;
+					background-color: $light_text_color;
+					color: white;
+					font-family: 'Poppins', sans-serif;
+					font-weight: 500;
+					font-size: 14px;
+					box-shadow: none;
+					text-transform: capitalize;
+				}
+				p {
+					text-align: left;
+					color: $dark_text_color;
+					font-family: 'Poppins', sans-serif;
+					font-weight: 400;
+					font-size: 15px;
+					margin-top: 20px;
+				}
+			}
+		}
+		.input_container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 30px 0 15px 0;
+			& > div {
+				width: 48%;
+				p {
+					margin-top: 15px;
+				}
+			}
+			.description {
+				width: 100%;
+			}
+		}
+
+		.model_btn {
+			display: flex;
+			justify-content: flex-end;
+			button {
+				width: 5.5rem;
+				height: 2.5rem;
+				background-color: $dark_color;
+				color: white;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 500;
+				font-size: 12px;
+				text-transform: capitalize;
+				border: solid;
+				box-shadow: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.model__container {
+		width: 100%;
+		.model__heading {
+			display: flex;
+			justify-content: center;
+			.header {
+				margin-top: 10%;
+				margin-bottom: 1%;
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.model__content {
+			padding-top: 0;
+			.uploadPhoto_area {
+				padding-top: 20px !important;
+				flex-direction: column;
+				gap: 25px;
+				aspect-ratio: 0;
+				padding: 10px 0;
+				img {
+					width: 10rem;
+					max-width: 75%;
+					max-height: 75%;
+				}
+				.uploadPhoto_right {
+					gap: 20px;
+					align-items: center;
+					text-align: center;
+					width: 80%;
+					label {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						p {
+							text-align: center;
+						}
+					}
+				}
+			}
+			.input_container {
+				margin: 20px 0 15px 0;
+				& > div {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

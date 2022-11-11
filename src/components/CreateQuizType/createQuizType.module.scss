@@ -1,0 +1,170 @@
+@import '../../theme.scss';
+li {
+	list-style-type: none;
+}
+
+.model__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.model__heading {
+		width: 100%;
+		margin: 0px;
+	}
+	.header {
+		color: black;
+		text-align: left;
+		padding: 1rem 0px;
+		margin: 2% 15%;
+	}
+}
+
+.model__content {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.model_paragraph {
+	font-size: 1.5rem;
+	font-weight: 600;
+	align-self: flex-start;
+	margin: 1rem 0% 0% 17%;
+}
+
+.model__quizTag {
+	background-color: #dddddd;
+	color: black;
+	border: none;
+	width: 8rem;
+	height: 2.8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: 'Poppins';
+	font-size: 1.2rem;
+	font-weight: 650;
+	padding: 0 0.5rem;
+	box-shadow: 0px 10.4502px 23.2228px -6.96683px #fbe18f;
+	&:hover {
+		background-color: $theme_color;
+	}
+}
+.selectedQuizTag {
+	@extend .model__quizTag;
+	background-color: $theme_color;
+}
+.CancelSelectedQuizTag {
+	color: white;
+	background-color: black;
+	font-weight: 500;
+	padding: 0 0.5rem;
+}
+.quizTagSelectSection {
+	margin: 4% 10% 4% 17%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: scroll;
+	height: 50vh;
+	justify-content: flex-start;
+}
+.selctType {
+	padding: 0rem 2rem;
+	margin: 1rem 0;
+}
+.addTagBtn {
+	cursor: pointer;
+	background-color: #6b6b6b;
+	padding: 0 3rem;
+}
+
+.model__button__container {
+	width: 89%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	margin: 1rem 0rem;
+}
+
+.model__start__button,
+.model__previous__button {
+	background-color: $theme_color;
+	color: white;
+	font-family: 'Poppins';
+	font-size: 1.3rem;
+	width: 8rem;
+	height: 2.8rem;
+	border: none;
+	padding: 0.2rem 0.8rem;
+	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.model__previous__button {
+	background: #474747;
+}
+
+@include media($wide) {
+	.quizTagSelectSection {
+		height: 60vh;
+	}
+}
+
+@include media($desktop) {
+	.model__quizTag,
+	.addTagBtn {
+		font-size: 1.3rem;
+		font-weight: 650;
+	}
+	.addTagBtn {
+		padding: 0 3rem;
+	}
+}
+@include media($phone) {
+	.model__container {
+		.header {
+			margin-top: 10%;
+		}
+	}
+	.model__content {
+		.model_paragraph {
+			margin-top: 0%;
+			margin-bottom: 2%;
+			margin-left: 22.5%;
+		}
+	}
+	.notice {
+		font-size: 1rem;
+	}
+	.model__quizTag,
+	.addTagBtn {
+		font-size: 0.9rem;
+		font-weight: 650;
+		width: 6rem;
+		height: 1.8rem;
+	}
+	.addTagBtn {
+		padding: 0 0rem;
+	}
+	.model__start__button,
+	.model__previous__button {
+		font-size: 1rem;
+		width: 7rem;
+		height: 2rem;
+	}
+	.selctType {
+		padding: 0 0.3rem;
+		margin: 0.3rem 0;
+	}
+	.quizTagSelectSection,
+	.model_paragraph {
+		margin-left: 10.5%;
+		gap: 4%;
+	}
+	.model__button__container {
+		width: 100%;
+		justify-content: center;
+	}
+}

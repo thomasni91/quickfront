@@ -1,0 +1,27 @@
+@import '../../theme.scss';
+.commit__container {
+	width: 100%;
+	margin-top: 1rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	.commit__title {
+		padding: 1rem 0;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 20px;
+		color: #6b6b6b;
+		width: 100%;
+		position: static;
+	}
+}
+
+@include media($phone) {
+	.commit__container {
+		.commit__title {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

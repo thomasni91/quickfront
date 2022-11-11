@@ -1,0 +1,120 @@
+@import '../../theme.scss';
+.quizList {
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	a:link,
+	a:active,
+	a:visited,
+	a:active {
+		color: black;
+	}
+	.noQuiz {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+}
+.quizList__button__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	width: 60%;
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 7px;
+	.quizList__button {
+		border: 0;
+		background-color: #f4f4f4;
+		margin-left: 0.2rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		cursor: pointer;
+	}
+	.quizList__button__active {
+		color: white;
+		background-color: #ffcd2e;
+		border-radius: 50%;
+	}
+	.quizList__button__previous {
+		background: #ffffff;
+		border-radius: 3px;
+		color: black;
+		width: 5rem;
+		border: 0;
+		padding: 0.35rem;
+	}
+	.quizList__button__next {
+		background: #ffcd2e;
+		border-radius: 3px;
+		color: black;
+		border: 0;
+		width: 5rem;
+		border: 0;
+		padding: 0.35rem;
+	}
+}
+.quizCard {
+	width: 100%;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+	background-color: #f4f4f4;
+	.quizCard__image {
+		width: 16rem;
+		height: 9rem;
+		object-fit: cover;
+		border: 1px solid #cecece;
+		border-radius: 8px;
+	}
+	.quizCard__content {
+		gap: 1rem;
+		display: flex;
+		flex-direction: column;
+		text-transform: capitalize;
+		.quizCard__description {
+			color: #7b7b7b;
+			margin: 0.5rem 0;
+		}
+		.quizCard__info__container {
+			display: flex;
+			gap: 1rem;
+		}
+		.quizCard__info {
+			background-color: white;
+			border: 0.3px solid #f1f1f1;
+			border-radius: 1px;
+			color: #7a7a7a;
+			padding: 0.3rem;
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@include media($phone) {
+	.quizList {
+		width: 95%;
+		margin: 0.5rem auto;
+		flex-direction: column;
+		align-items: center;
+	}
+	.quizList__button__container {
+		width: 100%;
+		margin: 10px auto;
+		display: inline-block;
+	}
+	.quizCard {
+		width: 300px;
+		flex-direction: column;
+		align-items: center;
+		.quizCard__image {
+			width: 5rem;
+			height: 5rem;
+		}
+	}
+}

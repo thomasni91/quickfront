@@ -1,0 +1,35 @@
+@import '../../theme.scss';
+
+@mixin buttonStyle {
+	width: 56px;
+	height: 27px;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid $theme_color;
+	background-color: white;
+	color: $theme_color;
+	cursor: pointer;
+	text-transform: none;
+	&:hover {
+		color: #ffff;
+		background-color: $theme_color;
+	}
+}
+
+.btnWrapper {
+	display: flex;
+	justify-content: flex-end;
+	button {
+		@include buttonStyle();
+	}
+	.button__submit {
+		background-color: $theme_color;
+		color: white;
+		margin-right: 20px;
+		&:hover {
+			color: $theme_color;
+			background-color: #ffff;
+		}
+	}
+}

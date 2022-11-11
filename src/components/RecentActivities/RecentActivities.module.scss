@@ -1,0 +1,82 @@
+@import '../../theme.scss';
+
+.activitiesCard {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: start;
+	header {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 20px;
+		color: #6b6b6b;
+		height: 30px;
+		width: 100%;
+		position: static;
+		margin: 10px 0px;
+	}
+	ul {
+		height: fit-content;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		gap: 5%;
+		flex-flow: nowrap;
+		overflow: scroll;
+		li {
+			border-radius: 10px;
+			background-color: #f6f6f6;
+			width: 30%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			min-width: 300px;
+			justify-content: flex-start;
+			align-items: self-start;
+			padding: 10px 0px 10px 35px;
+			position: relative;
+			.date {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 14px;
+				color: #6b6b6b;
+				width: 80%;
+				border-bottom: 1px solid #e7e7e7;
+				padding-bottom: 10px;
+			}
+			main {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 12px;
+				line-height: 14px;
+				color: #6b6b6b;
+				padding-top: 10px;
+				padding-bottom: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 5px;
+				width: 100%;
+				.description {
+					width: 80%;
+					overflow-wrap: break-word;
+				}
+			}
+		}
+	}
+}
+
+@include media($phone) {
+	.activitiesCard {
+		header {
+			display: flex;
+			align-items: center;
+			margin-top: 12%;
+		}
+	}
+}

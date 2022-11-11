@@ -1,0 +1,72 @@
+@import '../../../theme.scss';
+
+.SearchField {
+	z-index: 200;
+	a:link,
+	a:active,
+	a:visited,
+	a:active {
+		color: black;
+	}
+	.SearchField_bar {
+		display: flex;
+		align-items: center;
+		.SearchField__input {
+			background-color: #f3f3f3;
+			padding-left: 40px;
+			height: 35px;
+			width: 450px;
+			border: none;
+			font-size: 1rem;
+			border: 1px solid #d6d6d6;
+			border-radius: 8px;
+			&:focus {
+				outline: none;
+				border-radius: 8px 8px 0px 0px;
+				border-bottom: 3px solid #d6d6d6;
+			}
+		}
+		.SearchField__icon {
+			color: '#6F6F6F';
+			position: absolute;
+			margin-left: 10px;
+			opacity: 0.5;
+			padding: 3px;
+			&:hover {
+				border-radius: 50%;
+				background-color: rgba(0, 0, 0, 0.06);
+				cursor: pointer;
+			}
+		}
+	}
+	.SearchFieldResult__Background {
+		background-color: #f3f3f3;
+		width: 450px;
+		border: 1px solid #d6d6d6;
+		border-top: none;
+		border-radius: 0px 0px 8px 8px;
+		position: absolute;
+		& > ul {
+			display: flex;
+			flex-direction: column;
+			max-height: 350px;
+			overflow: auto;
+			li {
+				display: flex;
+				padding-left: 40px;
+				align-items: center;
+				height: 35px;
+				&:hover {
+					background-color: #d6d6d6;
+				}
+			}
+		}
+	}
+}
+
+@include media($tablet-protrait) {
+	.SearchField,
+	.SearchFieldResult__Background {
+		width: 200px !important;
+	}
+}

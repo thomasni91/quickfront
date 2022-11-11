@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # install node 16
+      - echo Installing node 16...
+      - curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+      - apt install -y nodejs
+      # install yarn
+      - echo Installing yarn...
+      - npm install --global yarn
+
+  pre_build:
+    commands:
+      # install dependencies
+      - echo Installing dependencies...
+      - yarn
+      - echo Eslint...
+      - yarn prettier
+
+  build:
+    commands:
+      # build
+      - echo Building artifacts...
+      - yarn build
+
+artifacts:
+  files:
+    - '**/*'
+  discard-path: no
+  base-directory: build
