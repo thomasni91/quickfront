@@ -16,7 +16,7 @@ phases:
       # install dependencies
       - echo Installing dependencies..
       - yarn
-      - echo Eslint...
+      - echo Eslint....
       - yarn prettier
 
   build:
