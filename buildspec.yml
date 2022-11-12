@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       # install node 16
-      - echo Installing node 16...14...!
+      - echo Installing node 16...14...
       - curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
       - apt install -y nodejs
       # install yarn
