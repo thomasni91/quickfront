@@ -126,7 +126,7 @@ function Login() {
 					onClick={handleBack}
 				>
 					<FontAwesomeIcon icon={faChevronLeft} size="1x" />
-					<p>BACK go</p>
+					<p>BACK good</p>
 				</Button>
 			)}
 			<div className={classes.login__form}>
